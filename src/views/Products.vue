@@ -2,6 +2,7 @@
 import ProductCard from '@/components/ProductCard.vue';
 import { ref, onMounted } from 'vue';
 
+
 const products = ref({});
 
 function getProducts() {

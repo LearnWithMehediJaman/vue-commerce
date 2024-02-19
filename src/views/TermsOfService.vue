@@ -1,15 +1,18 @@
 <script setup>
-    import ChildComponent from './ChildComponent.vue';
-    import ChildComponent2 from './ChildComonent2.vue';
-    const numbers = [
-        1,
-        2,
-        3,
-        4,
-        5,
-    ];
+import { provide } from 'vue';
+import PersonDetails from './PersonDetails.vue';
+import About from './About.vue';
+const person = {
+    name: 'John Doe',
+    age: 30,
+    city: 'New York',
+    country: 'USA'
+}
+
+provide('person', person);
 </script>
+
 <template>
-    <ChildComponent :numbers="numbers"></ChildComponent>
-    <ChildComponent2 :numbers="numbers"></ChildComponent2>
+    <PersonDetails></PersonDetails>
+    <About></About>
 </template>

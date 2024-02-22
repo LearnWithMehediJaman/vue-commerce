@@ -1,12 +1,15 @@
 <script setup>
 import { inject } from 'vue';
 
+import  { studentList, teacherList } from '@/data/list';
+
 const person = inject('person');
 
 </script>
 
 <template>
-  {{ person }}
+  Students: <pre>{{ studentList }}</pre>
+  TEachers:<pre> {{ teacherList }}</pre>
   <section class="bg-white dark:bg-gray-900">
     <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
       <div class="mx-auto mb-8 max-w-screen-sm lg:mb-16">
@@ -378,4 +381,4 @@ const person = inject('person');
       </div>
     </div>
   </section>
-</template>
+</template>@/data/list

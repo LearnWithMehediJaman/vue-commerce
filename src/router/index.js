@@ -8,6 +8,7 @@ import PrivacyPolicy from '@/views/PrivacyPolicy.vue';
 import Login from '@/views/Login.vue';
 import Register from '@/views/Register.vue';
 import Cart from '@/views/Cart.vue';
+import Messages from '@/views/Messages.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -61,6 +62,11 @@ const router = createRouter({
       path: '/cart',
       name: 'cart',
       component: Cart
+    },
+    {
+      path: '/messages',
+      name: 'messages',
+      component: Messages
     }
   ]
 })
